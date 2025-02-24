@@ -164,6 +164,7 @@ p {
     position: absolute; /* Фиксируем футер внизу */
     left: 0; /* Чтобы футер располагался от левого края */
     bottom: 0; /* Фиксируем футер внизу */
+    margin: 0 auto;
     font-size: 19px;
     font-weight: bold;
     color: #fafaff;

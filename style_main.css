@@ -3,12 +3,16 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
-    padding: 50px;
-    height: 100vh;
-    margin: 0;
+    justify-content: space-between; /* Чтобы контент растягивался, а футер был всегда внизу */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    height: 100%; /* Устанавливаем высоту body */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Чтобы контент растягивался, а футер был всегда внизу */
+}
+
+main {
+    flex: 1;
 }
 
 h1 {
@@ -168,7 +172,7 @@ p {
     font-size: 19px;
     font-weight: bold;
     color: #fafaff;
-    padding: 20px 0; /* Паддинг сверху и снизу */
+    padding: 0; /* Паддинг сверху и снизу */
     box-sizing: border-box; /* Учитываем padding в ширине элемента */
 }
 

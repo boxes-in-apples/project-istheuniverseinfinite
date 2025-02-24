@@ -48,6 +48,8 @@ p {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: auto; /* Снимаем ограничение по ширине */
+    box-sizing: border-box; /* Учитываем padding в размере кнопки */
 }
 
 #randomButton:hover {
@@ -59,6 +61,7 @@ p {
     background-color: #ff8e8e;
     transform: scale(0.95);
 }
+
 
 
 .footer {

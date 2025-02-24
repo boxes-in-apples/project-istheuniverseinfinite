@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="style_main.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="main.html">Home</a>
+        <a href="facts.html">Random Facts</a>
+        <a href="90.html">NO CSS</a>
+        <a href="quote.html">Quotes</a>
+    </div>
+    <h1>RANDOM QUOTE</h1>
+    <button onclick="showQuote()" class="button">Show quote</button>
+    <p id="quote-text">Press the button to get the quote!</p>
+    <img src="perfect.jpg">
+    <script>
+        function showQuote() {
+            const quotes = [
+                "I’m sick of following my dreams, man. I’m just going to ask where they’re going and hook up with ’em later. - Mitch Hedberg",
+                "If I were two-faced, would I be wearing this one? - Abraham Lincoln",
+                "The best thing about the future is that it comes one day at a time. - Abraham Lincoln"
+            ];
+            document.getElementById("quote-text").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+        }
+    </script>
+</body>
+</html>

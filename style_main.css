@@ -158,12 +158,16 @@ p {
   }
 
 .footer {
-    background:#000;
-    font-family: 'Play', sans-serif;
-    text-align:center;
-    padding:-100px -100px;
-    margin:0;
+    background-color: #1c1c23;
+    text-align: center;
+    width: 100%; /* Убедитесь, что ширина 100% */
+    font-size: 19px;
+    font-weight: bold;
+    color: #fafaff;
+    padding: 20px 0; /* Паддинг снизу и сверху, можно подрегулировать */
+    margin: 0; /* Убедитесь, что нет отрицательного маргина */
 }
+
 
 .footer .row {
     width:100%;

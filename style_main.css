@@ -165,7 +165,7 @@ p {
     background-color: #1c1c23;
     text-align: center;
     width: 100%; /* Ширина футера 100% */
-    position: absolute; /* Фиксируем футер внизу */
+    position: fixed; /* Фиксируем футер внизу */
     left: 0; /* Чтобы футер располагался от левого края */
     bottom: 0; /* Фиксируем футер внизу */
     margin: 0 auto;

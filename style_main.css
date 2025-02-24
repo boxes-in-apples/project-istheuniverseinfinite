@@ -3,16 +3,17 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
-    justify-content: space-between; /* Чтобы контент растягивался, а футер был всегда внизу */
     margin: 0; /* Убираем внешние отступы */
-    padding: 30px; /* Убираем внутренние отступы */
+    padding: 0; /* Убираем внутренние отступы */
     height: 100%; /* Устанавливаем высоту body */
     display: flex;
     flex-direction: column;
+    position: relative; /* Для правильного позиционирования */
 }
 
 main {
     flex: 1;
+    margin-top: 60px; /* Это место для отступа под навигацию */
 }
 
 h1 {
@@ -60,20 +61,66 @@ p {
 
 .footer {
     background-color: #1c1c23;
-     right: 0;
-     bottom: 0;
-     text-align: center; 
-     width: 105%;   
-     font-size: 19px;
-  font-weight: bold;
-    color: #fafaff;  
-   }
-   .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-/* Style the navigation bar */
+    text-align: center;
+    position: fixed; /* Фиксируем футер внизу */
+    left: 0; /* Чтобы футер располагался от левого края */
+    bottom: 0; /* Фиксируем футер внизу */
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fafaff;
+    padding: 0px; /* Паддинг сверху и снизу */
+    box-sizing: border-box; /* Учитываем padding в ширине элемента */
+}
+
+.footer .row {
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .row a {
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+
+.footer .row a:hover {
+    color:#fff;
+}
+
+.footer .row ul {
+    width:100%;
+}
+
+.footer .row ul li {
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row a i {
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+/* Навигационная панель */
 .topnav {
     background: linear-gradient(45deg, #1d232d, #31304b); /* Cosmic gradient background */
     overflow: hidden;
@@ -87,7 +134,6 @@ p {
     border-bottom: 3px solid rgba(91, 2, 255, 0.2); /* Subtle glowing border */
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     color: #ecf0f1; /* Light color text */
@@ -136,88 +182,4 @@ p {
         font-size: 16px;
         padding: 12px 18px; /* Adjust padding for mobile */
     }
-}
-
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #675fb1;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #222656;
-  }
-  
-.button:hover {background-color: #453882}
-  
-.button:active {
-    background-color: #4d3e8e;
-    box-shadow: 0 5px #222656;
-    transform: translateY(4px);
-  }
-
-.footer {
-    background-color: #1c1c23;
-    text-align: center;
-    position: fixed; /* Фиксируем футер внизу */
-    left: 0; /* Чтобы футер располагался от левого края */
-    bottom: 0; /* Фиксируем футер внизу */
-    margin: 0px;
-    font-size: 19px;
-    font-weight: bold;
-    color: #fafaff;
-    padding: 0px; /* Паддинг сверху и снизу */
-    box-sizing: border-box; /* Учитываем padding в ширине элемента */
-}
-
-.footer .row {
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:gray;
-    font-size:0.8em;
-}
-
-.footer .row a {
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-}
-
-.footer .row a:hover {
-    color:#fff;
-}
-
-.footer .row ul {
-    width:100%;
-}
-
-.footer .row ul li {
-    display:inline-block;
-    margin:0px 30px;
-}
-
-.footer .row a i {
-    font-size:2em;
-    margin:0% 1%;
-}
-
-@media (max-width:720px) {
-.footer{
-    text-align:left;
-    padding:5%;
-}
-.footer .row ul li {
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-}
-.footer .row a i {
-    margin:0% 3%;
-}
 }

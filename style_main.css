@@ -5,7 +5,7 @@ body {
     text-align: center;
     justify-content: space-between; /* Чтобы контент растягивался, а футер был всегда внизу */
     margin: 0; /* Убираем внешние отступы */
-    padding: 0; /* Убираем внутренние отступы */
+    padding: 30px; /* Убираем внутренние отступы */
     height: 100%; /* Устанавливаем высоту body */
     display: flex;
     flex-direction: column;

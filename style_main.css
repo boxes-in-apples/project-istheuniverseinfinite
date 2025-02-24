@@ -48,7 +48,7 @@ p {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    max-width: 100%; /* Ограничиваем максимальную ширину кнопки */
+    max-width: 80%; /* Ограничиваем максимальную ширину кнопки */
     box-sizing: border-box;
 }
 

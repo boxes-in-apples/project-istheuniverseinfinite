@@ -164,15 +164,14 @@ p {
 .footer {
     background-color: #1c1c23;
     text-align: center;
-    width: 100%; /* Ширина футера 100% */
     position: fixed; /* Фиксируем футер внизу */
     left: 0; /* Чтобы футер располагался от левого края */
     bottom: 0; /* Фиксируем футер внизу */
-    margin: 0 auto;
+    margin: 0px;
     font-size: 19px;
     font-weight: bold;
     color: #fafaff;
-    padding: 0; /* Паддинг сверху и снизу */
+    padding: 0px; /* Паддинг сверху и снизу */
     box-sizing: border-box; /* Учитываем padding в ширине элемента */
 }
 

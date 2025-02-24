@@ -9,11 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     position: relative; /* Для правильного позиционирования */
+    padding-top: 60px; /* Отступ сверху для контента, чтобы не перекрывать навигацию */
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
 
 main {
     flex: 1;
-    margin-top: 60px; /* Это место для отступа под навигацию */
 }
 
 h1 {
@@ -47,6 +48,8 @@ p {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    max-width: 100%; /* Ограничиваем максимальную ширину кнопки */
+    box-sizing: border-box;
 }
 
 #randomButton:hover {

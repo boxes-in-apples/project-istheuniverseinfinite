@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #1e1a24, #5e4f6a);
+    background: linear-gradient(to right, #3B3561, #D2D6EF);
     font-family: 'Arial', sans-serif;
     color: white;
     text-align: center;
@@ -28,7 +28,7 @@ p {
     padding: 20px;
     max-width: 90%;
     background-color: #fff;
-    border: 6px dashed #f69c55;
+    border: 6px dashed #F6AE2D;
     font-family: 'Monomakh', sans-serif;
     text-align: center;
     line-height: 1.5;

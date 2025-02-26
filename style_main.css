@@ -46,17 +46,19 @@ p {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #ED6A5A;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 14px #943f34;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {
+    background-color: #b23221
+}
 
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  background-color: #b23221;
+  box-shadow: 0 14px #66332c;
   transform: translateY(4px);
 }
 

@@ -53,11 +53,11 @@ p {
 }
 
 .button:hover {
-    background-color: #b23221
+    background-color: #d16456;
 }
 
 .button:active {
-  background-color: #b23221;
+  background-color: #d16456;
   box-shadow: 0 14px #66332c;
   transform: translateY(4px);
 }

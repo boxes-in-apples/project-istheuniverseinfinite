@@ -133,7 +133,7 @@ p {
 }
  
 .social-icons a:hover img {
-    background-color: #fff;
+    color: #fff;
     transform: scale(1.2);
 }
 
